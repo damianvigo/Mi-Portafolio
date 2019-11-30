@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Damian Vigo Portafolio" />
+  <meta name="keywords"
+    content="Damian Daniel Vigo, developer, desarrollador web, programador, frontend, frontEnd, front-end" />
+  <meta name="author" content="Damian Vigo" />
+  <title>Portafolio de Damian Vigo</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145056950-1"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/nivo-slider.css">
+  <!-- <link rel="stylesheet" href="themes/default/default.css"> -->
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <header>
+    <div class="contenedor">
+      <nav class="menu" id="menu">
+        <a href="#" id="btn-sobre-mi">Sobre mi</a>
+        <a href="#" id="btn-proyectos">Proyectos</a>
+        <a href="#" id="btn-contacto">Contacto</a>
+      </nav>
+
+      <div class="contenedor-texto">
+        <div class="texto">
+          <h1 class="nombre">Damián Vigo</h1>
+          <h2 class="profesion">Desarrollador Web Frontend</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <section class="acerca-de" id="acerca-de">
+      <div class="contenedor">
+        <div class="foto">
+          <img src="img/yo.jpg" width="115" alt="Foto retrato de Damián Vigo" />
+        </div>
+
+        <div class="texto">
+          <h3 class="titulo">¿Quién soy?</h3>
+          <p> ¡Hola!👋 Me llamo Damián Vigo y soy Developer Junior de Buenos Aires Argentina. Actualmente estoy
+            mejorando mis conocimientos en tecnologías frotend y aprendiendo algunas cosas sobre backend.
+            Entuasiasta por la tecnología, el código, la música electrónica, el deporte y el
+            diseño.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+      <div class="contenedor">
+        <h3 class="titulo">¿Qué proyectos hice?</h3>
+        <div class="contenedor-proyectos" id="contenedor-proyectos">
+          <div class="proyecto" data-descripcion="Sitio Web de Series. Hecho con HTML5 Y CSS3">
+            <div class="thumb">
+              <img src="img/1.jpg" title="Series"
+                alt="Web de series, hecha con lenguajes de programación como html y css" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Web</p>
+              <p class="categoria">HTML - CSS</p>
+              <a class="repo" href="https://github.com/damianvigo/Mis-Series"
+                onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Login. Hecho con HTML5 Y CSS3">
+            <div class="thumb">
+              <img src="img/2.jpg" title="Login"
+                alt="Web de inicio de sesión, hecha con lenguajes de programación como html y css" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Login</p>
+              <p class="categoria">HTML - CSS</p>
+              <a class="repo" href="https://github.com/damianvigo"
+                onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Login para dispositivos móviles. Hecho con HTML5 Y CSS3">
+            <div class="thumb">
+              <img src="img/3.jpg" title="Login"
+                alt="Web de inicio de sesión para dispositivos móviles, hecha con html y css" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Login - Responsive</p>
+              <p class="categoria">HTML - CSS</p>
+              <a class="repo" href="https://github.com/damianvigo"
+                onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="proyecto"
+            data-descripcion="Juego donde el usuario debe memorizar la secuencia de colores. Hecho con HTML5, CSS3 y JavaScript.">
+            <div class="thumb">
+              <img src="img/4.jpg" title="Juego"
+                alt="Juego 'Simón dice' donde el usuario debe adivinar la secuencia de colores. Hecho en html, css y Javascript " />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Juego</p>
+              <p class="categoria">HTML - CSS - JavaScript</p>
+              <a class="repo" href="https://github.com/damianvigo/Simon-dice"
+                onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Marca ficticia de alimento para gatos. Hecho en Photoshop.">
+            <div class="thumb">
+              <img src="img/5.jpg" title="Gato siamés"
+                alt="Diseño de una marca ficticia de alimento para gatos, realizado en Photoshop" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Diseño de Marca</p>
+              <p class="categoria">Diseño</p>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Imagen real de mi gato siamés para ser usada en síntesis gráfica.">
+            <div class="thumb">
+              <img src="img/6.jpg" title="Gato siamés"
+                alt="Imagen real de un hermoso gato siamés mirando a la cámara" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Imagen Real</p>
+              <p class="categoria">Diseño</p>
+            </div>
+          </div>
+
+          <div class="proyecto"
+            data-descripcion="Dibujo realizado en photoshop, utilizando las respectivas leyes de Gestalt.">
+            <div class="thumb">
+              <img src="img/7.jpg" title="Gato siamés"
+                alt="Boceto de un gato siamés dibujado en photoshop solo con lineas y planos" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Síntesis Gráfica</p>
+              <p class="categoria">Diseño</p>
+            </div>
+          </div>
+
+          <div class="proyecto"
+            data-descripcion="Dibujo realizado en photoshop, utilizando las respectivas leyes de Gestalt.">
+            <div class="thumb">
+              <img src="img/8.jpg" title="Gato siamés"
+                alt="Boceto de un gato siamés dibujado en photoshop solo con planos blanco y negro" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Síntesis Gráfica</p>
+              <p class="categoria">Diseño</p>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Diseño de una web en construcción, realizado en photoshop.">
+            <div class="thumb">
+              <img src="img/9.jpg" title="Web en construcción"
+                alt="Web con temática de música electrónica en construcción" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Diseño</p>
+              <p class="categoria">Diseño - Web</p>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Banner, realizado en photoshop.">
+            <div class="thumb">
+              <img src="img/10.jpg" title="Baileys" alt="Un banner del licor Baileys Irish Cream" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Diseño</p>
+              <p class="categoria">Diseño - Web</p>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Diseño de una web de un restaurante, realizado en photoshop.">
+            <div class="thumb">
+              <img src="img/12.jpg" title="Diseño" alt="Diseño de una Web de un restaurante de comida" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Diseño</p>
+              <p class="categoria">Diseño - Web</p>
+            </div>
+          </div>
+
+          <div class="proyecto" data-descripcion="Diseño de una web en construcción, realizado en photoshop.">
+            <div class="thumb">
+              <img src="img/11.jpg" title="Web en construcción" alt="Web con temática deportiva en construcción" />
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Diseño</p>
+              <p class="categoria">Diseño - Web</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-website">
+      <section class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <h2 class="titulo">Páginas web</h2>
+          </div>
+        </div>
+
+        <div class="row galeria">
+          <div class="col-12 col-md-6 mb-5 col-lg-2">
+            <div class="material-placeholder">
+              <img src="img/cafe.jpg" title="Café" class="responsive-img materialboxed" alt="Sitio web de una Cafetería"
+                data-caption="Sitio Web creado con HTML5 - CSS3/SASS - JavaScript/jQuery - Responsive " />
+              <div class="full-web text-center">
+                <p class="full-titulo">HTML5 - CSS3/SASS JavaScript/jQuery Responsive Parallax</p>
+                <a class="full-repo" href="https://github.com/damianvigo/damianvigo.github.io"
+                  onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mb-5 col-md-6 col-lg-2">
+            <div class="material-placeholder">
+              <img src="img/blog.jpg" title="Blog" class="responsive-img materialboxed"
+                alt="Un blog hecho para Wordpress" data-caption="Un theme creado para WordPress." />
+              <div class="full-web text-center">
+                <p class="full-titulo">PHP - Bootstrap</p>
+                <a class="full-repo" href="https://github.com/damianvigo/Blog"
+                  onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5 col-lg-2">
+            <div class="material-placeholder">
+              <img src="img/startup.jpg" title="Startup" class="responsive-img materialboxed" alt=""
+                data-caption="Web creada con HTML5 CSS3/SASS Bootstrap" />
+            </div>
+            <div class="full-web text-center">
+              <p class="full-titulo">HTML5 CSS3/SASS Bootstrap</p>
+              <a class="full-repo" href="https://github.com/damianvigo/Startup"
+                onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="col-12 mb-5 col-md-6 col-lg-2">
+            <div class="material-placeholder">
+              <img src="img/wordpress.jpg" title="Wordpress" class="responsive-img materialboxed"
+                alt="Sitio hecho en WordPress con la plantilla oceanwp" data-caption="Sitio creado en WordPress.org" />
+              <div class="full-web text-center">
+                <p class="full-titulo">WordPress</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mb-5 col-md-6 col-lg-2">
+            <div class="material-placeholder">
+              <img src="img/landing1.jpg" title="Landing-page" class="responsive-img materialboxed"
+                alt="Landing Page creada con photoshop" data-caption="Landing page. Creada en Photoshop" />
+              <div class="full-web text-center">
+                <p class="full-titulo">Landing Page Diseño</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-4">
+            <div class="material-placeholder">
+              <img src="img/landing2.jpg" class="responsive-img materialboxed" alt="Landing-page"
+                data-caption="Landing page. Creada en Photoshop" />
+              <div class="full-web text-center">
+                <p class="full-titulo">Landing Page Diseño</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+    </section>
+
+
+    <section class="certificado-contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="slider-wrapper theme-mi-slider">
+              <div id="slider" class="nivoSlider">
+                <img src="img/front.jpg" title="Diplomas"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
+                <img src="img/diseñoProfesional.jpg" title="Diplomas"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Udemy" />
+                <img src="img/google.jpg" title="Diplomas"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
+                <img src="img/seo.jpg" title="Diplomas"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
+                <img src="img/desarrolloWeb.jpg" title="Diplomas"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
+                <img src="img/seguridadInformáticaParaEmpresas.jpg" title="Diplomas"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
+                <img src="img/fundamentosDeIngenieríaDeSoftware.jpg" title="Diplomas"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
+              </div>
+              <div id="htmlcaption1" class="nivo-html-caption">
+                <p>
+                  <!-- para cambiar a futuro -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contacto col-12 col-md-6 w-50" id="contacto">
+            <h3 class="titulo">Contacto</h3>
+            <form method="post" class="formulario" action="form.php">
+              <input type="text" placeholder="Tu nombre :)" name="nombre" required name="nombre">
+              <input type="email" placeholder="Mail" name="correo" required name="correo">
+              <textarea name="mensaje" placeholder="¿En qué te puedo ayudar?"></textarea>
+              <input class="boton" type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="overlay" id="overlay">
+    <div class="contenedor-img">
+      <button id="btn-cerrar-lightbox"><i class="fa fa-times"></i></button>
+      <img src="" alt="">
+    </div>
+    <p class="descripcion"></p>
+  </section>
+
+  <footer>
+    <section class="redes-sociales">
+      <div class="items">
+        <a href="https://github.com/damianvigo/"
+        onclick="window.open(this.href, '_blank'); return false;" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://www.facebook.com/ddamianvigo"
+        onclick="window.open(this.href, '_blank'); return false;" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.gmail.com"
+        onclick="window.open(this.href, '_blank'); return false;" class="gmail"><i class="fa fa-envelope-o"></i></a>
+        <a href="https://platzi.com/@Damian/"
+        onclick="window.open(this.href, '_blank'); return false;" class="study"><i class="fa fa-graduation-cap"></i></a>
+      </div>
+      <div class="creado-por">
+        <p class="creado-por">Sitio diseñado por Dami&aacute;n Vigo. Todos los derechos reservados &copy; 2019</p>
+      </div>
+    </section>
+
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.nivo.slider.js"></script>
+  <script src="js/materialize.min.js"></script>
+</body>
+
+</html>

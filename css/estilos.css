@@ -1,0 +1,574 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; 
+}
+
+/* Scroll Personalizado */
+
+/* HEADER */
+
+header {
+  background: url("../img/fondo2.jpg") #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 600px;
+}
+
+header .menu {
+  margin: 0;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  z-index: 10;
+}
+
+header .menu a {
+  padding: 15px;
+  margin: 0 40px 0 0;
+  color: #fff;
+  display: inline-block;
+  line-height: 1em;
+  text-decoration: none;
+  /* border-bottom: 2px solid transparent; */ /* importante poner para que no haya un salto al mostrar el hover */
+  font-size: 1em;
+  transition: 0.5s ease all;
+  z-index: 99;
+}
+
+header .menu a:hover {
+  transform: translateY(5px);
+  background: #000;
+  border-radius: 3px;
+}
+
+header .menu .activo {
+  border-bottom: 2px solid greenyellow;
+}
+
+/* header .menu a:hover {
+  border-bottom: 2px solid #fff;
+} */
+
+header .contenedor-texto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 240px 0;
+}
+
+header .contenedor-texto .texto {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 60px;
+  margin-top: -90px;
+  background: #293462;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+header .contenedor-texto .texto .profesion {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+/* MAIN YO */
+
+.main .contenedor {
+  overflow: visible; /* para que se muestre la foto bien */
+}
+
+.main .acerca-de {
+  text-align: center; /* se centra la imagen porque son de tipo linea */
+  
+}
+
+.main .acerca-de .foto {
+  margin-top: -60px;
+}
+
+.main .acerca-de .foto img {
+  vertical-align: top;
+  border-radius: 50%; /* cambiar a una imagen cuadrada, mi foto */
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.main .acerca-de .texto {
+  color: #537ec5;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 30px;
+  width: 80%;
+  margin: 40px auto 60px auto;
+}
+
+.main .acerca-de .texto .titulo {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: #293a80;
+}
+
+/* MAIN TRABAJOS */
+
+.main .proyectos {
+  background: #000;
+  padding: 60px 0;
+}
+
+.main .proyectos .contenedor {
+  overflow: hidden; /* oculta el espaciado en este caso de las imagenes que excede el contenedor */
+}
+
+.main .proyectos .titulo {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 90px;
+  font-weight: 300;
+  text-align: center;
+  color: #64b2cd;
+}
+
+.main .proyectos .contenedor-proyectos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* para que las imagenes se pongan una debajo de otra */
+  justify-content: space-between;
+ /*  opacity: 0;
+  transition: 0.5s linear 1s; */
+}
+
+/* .contenedor-proyectos .proyectos-cargados {
+  opacity: 1;
+} */
+
+.main .proyectos .contenedor-proyectos .proyecto {
+  width: 23%;
+  margin-bottom: 50px;
+}
+
+.main .proyectos .contenedor-proyectos .proyecto .thumb {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main .proyectos .contenedor-proyectos .proyecto .thumb img {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 3px;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.main .proyectos .contenedor-proyectos .proyecto .thumb img:hover {
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main .proyectos .contenedor-proyectos .proyecto .descripcion {
+  text-align: center;
+}
+
+.main .proyectos .contenedor-proyectos .proyecto .descripcion .nombre {
+  font-weight: 700;
+  color: #64b2cd;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.main .proyectos .contenedor-proyectos .proyecto .descripcion .categoria {
+  font-size: 13px;
+  color: #fff;
+}
+
+.main .proyectos .contenedor-proyectos .proyecto .descripcion .repo {
+  font-size: 20px; 
+  color: #fff;
+}
+
+.full-website {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.full-website .titulo {
+  font-size: 55px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin: 80px auto;
+}
+
+.full-website .galeria img {
+  box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+
+.full-website .galeria .col {
+  margin-bottom: 20px;
+}
+
+.materialbox-caption {
+  bottom: 0px;
+  right: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  background: #000;
+  border-radius: 15px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.full-website .full-web .full-titulo {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  line-height: 35px;
+  box-shadow: 2px 5px 1px #443737;
+  display: inline-block;
+}
+
+.full-website .full-web .full-repo {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: none;
+  
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 11;
+}
+
+.overlay.activo {
+  display: flex;
+}
+
+.overlay img {
+  max-width: 100%;
+}
+
+.overlay .descripcion {
+  display: block;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.contenedor-img {
+  position: relative;
+}
+
+.overlay #btn-cerrar-lightbox {
+  background: none;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+
+
+
+/* FOOTER */
+
+.certificado-contacto {
+  padding: 60px 0px;
+  background: #fff;
+}
+
+.certificado-contacto {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #3895ea;
+  text-align: center;
+}
+
+.certificado-contacto .titulo {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.certificado-contacto .contacto .formulario input[type="text"],
+.certificado-contacto .contacto .formulario input[type="email"],
+.certificado-contacto .contacto .formulario textarea {
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #a4a4a4;
+}
+
+.certificado-contacto .contacto .formulario input[type="text"],
+.certificado-contacto .contacto .formulario input[type="email"] {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.certificado-contacto .contacto .formulario textarea {
+  width: 100%;
+  height: 100px;
+  min-width: 100%; /* para que el usario no pueda arrastar el campo del mensaje */
+  max-width: 100%; /* para que el usario no pueda arrastar el campo del mensaje */
+  min-height: 100px; /* para que el usario no pueda arrastar el campo del mensaje */
+  max-height: 300px; /* para que el usario no pueda arrastar el campo del mensaje */
+  margin-bottom: 15px;
+}
+
+.certificado-contacto .contacto .formulario .boton {
+  margin: auto;
+  background: #3895ea;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 40px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.certificado-contacto .contacto .formulario .boton:hover {
+  background: #387bea;
+}
+
+.certificado-contacto .contacto .formulario input[type="text"]:focus,
+.certificado-contacto .contacto .formulario input[type="email"]:focus,
+.certificado-contacto .contacto .formulario textarea:focus {
+  border: 2px solid #3895ea;
+}
+
+.theme-mi-slider .nivoSlider {
+  position: relative;
+}
+
+.theme-mi-slider .nivoSlider a {
+  border: 0;
+  display: block;
+}
+
+.nivo-controlNav{
+  display: flex;
+  justify-content: center;
+}
+
+.theme-mi-slider .nivo-control {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #545454;
+  border-radius: 50%;
+  margin: 5px;
+  text-indent: -9999px;
+}
+
+.theme-mi-slider .nivo-controlNav a:hover {
+  background: #1B1b1b;
+}
+
+.theme-mi-slider .active {
+  background: #64b2cd;
+}
+
+.nivo-directionNav a {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.nivo-directionNav .nivo-prevNav {
+  background-image: url(../icon/left-arrow.svg);
+  background-size: cover;
+  text-indent: -9999px;
+  left: 6px;
+}
+
+.nivo-directionNav .nivo-nextNav {
+  background-image: url(../icon/right-arrow.svg);
+  background-size: cover;
+  text-indent: -9999px;
+  margin-left: 15px;
+  right: 6px;
+}
+
+.nivo-html-caption {
+  position: absolute;
+  top: 40%;
+}
+
+/* REDES SOCIALES */
+
+footer .redes-sociales {
+  background: #1e2b38;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .redes-sociales .items {
+  order: 2;
+}
+
+footer .redes-sociales .items a {
+  color: #fff;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 20px;
+  line-height: 16px;
+}
+
+footer .redes-sociales .creado-por {
+  color: #fff;
+  font-size: 18px;
+  order: 1;
+}
+
+footer .redes-sociales .github:hover {
+  background: #333;
+  border-radius: 50px;
+}
+footer .redes-sociales .facebook:hover {
+  background: #3b5998;
+  border-radius: 50px;
+}
+footer .redes-sociales .gmail:hover {
+  background: #ea4335;
+  border-radius: 50px;
+}
+footer .redes-sociales .study:hover {
+  background: #34bf49;
+  border-radius: 50px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  footer .redes-sociales {
+    display: block;
+  }
+  footer .redes-sociales .items {
+    text-align: center;
+    display: block;
+  }
+  footer .redes-sociales .creado-por {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .materialbox-caption {
+    width: 70%;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  header .menu {
+    text-align: center;
+  }
+
+  .main .proyectos .contenedor-proyectos .proyecto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer .redes-sociales .creado-por {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .materialbox-caption {
+    width: 90%;
+  }
+
+  .formulario {
+    width: 85%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  header .contenedor-texto .texto .nombre {
+    font-size: 35px;
+  }
+
+  header .contenedor-texto .texto .profesion {
+    font-size: 18px;
+  }
+
+  footer .redes-sociales .contenedor {
+    flex-wrap: wrap;
+  }
+}

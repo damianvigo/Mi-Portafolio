@@ -1,0 +1,116 @@
+$(document).ready(function() {
+  // Efecto h1 y texto del header
+  if ($(window).width() > 800) {
+    $("header .texto").css({
+      opacity: 0,
+      marginTop: 0
+    });
+
+    $("header .contenedor-texto .texto").animate(
+      {
+        opacity: 1,
+        marginTop: "-52px"
+      },
+      1500
+    );
+  }
+  // Scroll Elementos Menu
+  var sobreMi = $("#acerca-de").offset().top,
+    proyectos = $("#proyectos").offset().top,
+    contacto = $("#contacto").offset().top;
+
+  $("#btn-sobre-mi").on("click", function(e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: 300
+      },
+      500
+    );
+  });
+
+  $("#btn-proyectos").on("click", function(e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: proyectos
+      },
+      500
+    );
+  });
+
+  $("#btn-contacto").on("click", function(e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: contacto
+      },
+      500
+    );
+  });
+  // Parallax
+  $(window).scroll(function() {
+    var windowWidth = $(window).width();
+    if (windowWidth > 800) {
+      var scroll = $(window).scrollTop();
+      $("header .contenedor-texto").css({
+        transform: "translate(0px," + scroll / 2 + "%)"
+      });
+    }
+  });
+  //enlaces activos
+  $("#menu a").on("click", function() {
+    $("a.activo").removeClass("activo");
+    $(this).addClass("activo");
+  });
+
+  $(window).on('load', function() {
+    $('#slider').nivoSlider();
+  });
+
+});
+
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145056950-1');
+
+// Materialize
+document.addEventListener("DOMContentLoaded", () => {
+  const imgLightBox = document.querySelectorAll(".materialboxed");
+  M.Materialbox.init(imgLightBox, {
+    inDuration: 500,
+    outDuration: 500
+  });
+});
+
+// Imagenes Cargadas - Bug
+window.addEventListener("load", () => {
+  document
+    .getElementById("contenedor-proyectos")
+    .classList.add("proyectos-cargados");
+});
+// Busco la ruta de la imagen y la descripción para el overlay
+const overlay = document.getElementById("overlay");
+document.querySelectorAll(".proyectos .thumb img").forEach(elemento => {
+  // Muestro el Overlay para cada imagen
+  elemento.addEventListener("click", () => {
+    const ruta = elemento.getAttribute("src");
+    const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+
+    overlay.classList.add("activo");
+    document.querySelector("#overlay img").src = ruta;
+    document.querySelector("#overlay .descripcion").innerHTML = descripcion;
+  });
+});
+
+// botón cerrar
+document.querySelector("#btn-cerrar-lightbox").addEventListener("click", () => {
+  overlay.classList.remove("activo");
+});
+
+overlay.addEventListener("click", evento => {
+  evento.target.id === "overlay" ? overlay.classList.remove("activo") : "";
+});
