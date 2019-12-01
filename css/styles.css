@@ -319,4 +319,39 @@ header .contenedor-texto {
     position: absolute;
     top: 40%; }
 
+footer .redes-sociales {
+  background: #1e2b38;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around; }
+  footer .redes-sociales .github:hover {
+    background: #333;
+    border-radius: 50px; }
+  footer .redes-sociales .facebook:hover {
+    background: #3b5998;
+    border-radius: 50px; }
+  footer .redes-sociales .gmail:hover {
+    background: #ea4335;
+    border-radius: 50px; }
+  footer .redes-sociales .study:hover {
+    background: #34bf49;
+    border-radius: 50px; }
+  footer .redes-sociales .items {
+    order: 2; }
+    footer .redes-sociales .items a {
+      color: #fff;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      padding: 15px 0;
+      border-radius: 3px;
+      font-size: 30px;
+      margin: 0 20px;
+      line-height: 16px; }
+  footer .redes-sociales .creado-por {
+    color: #fff;
+    font-size: 18px;
+    order: 1; }
+
 /*# sourceMappingURL=styles.css.map */
