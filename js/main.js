@@ -64,18 +64,60 @@ $(document).ready(function() {
     $(this).addClass("activo");
   });
 
-  $(window).on('load', function() {
-    $('#slider').nivoSlider();
+  $(window).on("load", function() {
+    $("#slider").nivoSlider();
+  });
+
+  $(function() {
+    var menu = document.getElementById("menu");
+    var headroom = new Headroom(menu);
+    headroom.init();
+  
+  //Menu Responsive 
+  //Ancho de la página
+    var ancho = $(window).width(),
+        enlaces = $('#enlaces'),
+        btnMenu = $('#btn-menu'),
+        icono = $('#btn-menu .icono')  
+
+        if(ancho < 768) {
+          enlaces.hide()
+          icono.addClass('fa-bars')
+        }
+
+        btnMenu.on('click', function(e) {
+          enlaces.slideToggle()
+          icono.toggleClass('fa-bars')
+          icono.toggleClass('fa-times')
+        })
+        
+        $(window).on('resize', function(){
+          if($(this).width() > 768) {
+            enlaces.show()
+            icono.addClass('fa-times')
+            icono.removeClass('fa-bars')
+          } else {
+            enlaces.hide()
+            icono.addClass('fa-bars')
+            icono.removeClass('fa-times')
+          }
+        })
+
+
+       
   });
 
 });
 
+
 // Google Analytics
 window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
 
-  gtag('config', 'UA-145056950-1');
+gtag("config", "UA-145056950-1");
 
 // Materialize
 document.addEventListener("DOMContentLoaded", () => {

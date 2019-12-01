@@ -11,7 +11,7 @@
     content="Damian Daniel Vigo, developer, desarrollador web, programador, frontend, frontEnd, front-end" />
   <meta name="author" content="Damian Vigo" />
   <title>Portafolio de Damian Vigo</title>
-  <link rel="shorcut icon" href="favicon/favicon.ico" type="image/x-icon" >
+  <link rel="shorcut icon" href="favicon/favicon.ico" type="image/x-icon">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145056950-1"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" />
@@ -19,20 +19,25 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/nivo-slider.css">
-  <!-- <link rel="stylesheet" href="themes/default/default.css"> -->
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/nivo-slider.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <header>
-    <div class="contenedor">
-      <nav class="menu" id="menu">
-        <a href="#" id="btn-sobre-mi">Sobre mi</a>
-        <a href="#" id="btn-proyectos">Proyectos</a>
-        <a href="#" id="btn-contacto">Contacto</a>
-      </nav>
+    <nav class="menu" id="menu">
+      <div class="menu-movil">
+        <a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars"></i></a>
+      </div>
+      <div class="enlaces" id="enlaces">
+        <a href="#" id="btn-bienvenido"><i class="fa fa-home"></i> Bienvenido</a>
+        <a href="#" id="btn-sobre-mi"><i class="fa fa-id-card-o"></i> Sobre mi</a>
+        <a href="#" id="btn-proyectos"><i class="fa fa-code"></i> Proyectos</a>
+        <a href="#" id="btn-contacto"><i class="fa fa-comments-o"></i> Contacto</a>
+      </div>
+    </nav>
 
+    <div class="contenedor">
       <div class="contenedor-texto">
         <div class="texto">
           <h1 class="nombre">Damián Vigo</h1>
@@ -51,7 +56,7 @@
 
         <div class="texto">
           <h3 class="titulo">¿Quién soy?</h3>
-          <p> ¡Hola!👋 Me llamo Damián Vigo y soy Developer Junior de Buenos Aires Argentina. Actualmente estoy
+          <p> ¡Hola! 👋 Me llamo Damián Vigo y soy Developer Junior de Buenos Aires Argentina. Actualmente me encuentro
             mejorando mis conocimientos en tecnologías frotend y aprendiendo algunas cosas sobre backend.
             Entuasiasta por la tecnología, el código, la música electrónica, el deporte y el
             diseño.
@@ -221,7 +226,7 @@
               <img src="img/cafe.jpg" title="Café" class="responsive-img materialboxed" alt="Sitio web de una Cafetería"
                 data-caption="Sitio Web creado con HTML5 - CSS3/SASS - JavaScript/jQuery - Responsive " />
               <div class="full-web text-center">
-                <p class="full-titulo">HTML5 - CSS3/SASS JavaScript/jQuery Responsive Parallax</p>
+                <p class="full-titulo">HTML5 CSS3/SASS JavaScript/jQuery Responsive Parallax</p>
                 <a class="full-repo" href="https://github.com/damianvigo/damianvigo.github.io"
                   onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
               </div>
@@ -256,7 +261,7 @@
             <div class="material-placeholder">
               <img src="img/wordpress.jpg" title="Wordpress" class="responsive-img materialboxed"
                 alt="Sitio hecho en WordPress con la plantilla oceanwp" data-caption="Sitio creado en WordPress.org" />
-              <div class="full-web text-center">
+              <div class="full-web text-center ml-3 p-5>
                 <p class="full-titulo">WordPress</p>
               </div>
             </div>
@@ -339,14 +344,14 @@
   <footer>
     <section class="redes-sociales">
       <div class="items">
-        <a href="https://github.com/damianvigo/"
-        onclick="window.open(this.href, '_blank'); return false;" class="github"><i class="fa fa-github"></i></a>
-        <a href="https://www.facebook.com/ddamianvigo"
-        onclick="window.open(this.href, '_blank'); return false;" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.gmail.com"
-        onclick="window.open(this.href, '_blank'); return false;" class="gmail"><i class="fa fa-envelope-o"></i></a>
-        <a href="https://platzi.com/@Damian/"
-        onclick="window.open(this.href, '_blank'); return false;" class="study"><i class="fa fa-graduation-cap"></i></a>
+        <a href="https://github.com/damianvigo/" onclick="window.open(this.href, '_blank'); return false;"
+          class="github"><i class="fa fa-github"></i></a>
+        <a href="https://www.facebook.com/ddamianvigo" onclick="window.open(this.href, '_blank'); return false;"
+          class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.gmail.com" onclick="window.open(this.href, '_blank'); return false;" class="gmail"><i
+            class="fa fa-envelope-o"></i></a>
+        <a href="https://platzi.com/@Damian/" onclick="window.open(this.href, '_blank'); return false;" class="study"><i
+            class="fa fa-graduation-cap"></i></a>
       </div>
       <div class="creado-por">
         <p class="creado-por">Sitio diseñado por Dami&aacute;n Vigo. Todos los derechos reservados &copy; 2019</p>
@@ -356,6 +361,7 @@
   </footer>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/headroom.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
