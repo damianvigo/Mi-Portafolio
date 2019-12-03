@@ -5,17 +5,17 @@
   margin: 0
   padding: 0
 
-.contenedor 
+.contenedor
   width: 90%
   max-width: 1000px
   margin: auto
   overflow: hidden
 
-body 
+body
   background: #fff
   font-family: "Open Sans", sans-serif
-  font-size: 16px 
-  .overlay 
+  font-size: 16px
+  .overlay
     position: fixed
     top: 0
     bottom: 0
@@ -28,6 +28,10 @@ body
     justify-content: center
     flex-direction: column
     z-index: 11
+    .descripcion
+      color: #fff
+      margin: 1em
+      font-size: 1.2em
     .contenedor-img
       position: relative
       #btn-cerrar-lightbox
@@ -39,9 +43,7 @@ body
         position: absolute
         right: -20px
         top: -20px
-      img 
-        max-width: 100%    
-    &.activo 
+      img
+        max-width: 100%
+    &.activo
       display: flex
-
-
