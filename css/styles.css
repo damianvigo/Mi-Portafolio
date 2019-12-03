@@ -433,10 +433,16 @@ footer .redes-sociales {
     width: 40%;
     padding: 0;
     font-size: 0.7em;
-    display: inline-block; } }
+    display: inline-block; }
+
+  body .overlay .descripcion {
+    font-size: 1em; } }
 @media screen and (max-width: 413px) {
   footer .redes-sociales .items {
     width: 75%;
-    margin-bottom: 2em; } }
+    margin-bottom: 2em; }
+
+  body .overlay .descripcion {
+    font-size: 0.7em; } }
 
 /*# sourceMappingURL=styles.css.map */

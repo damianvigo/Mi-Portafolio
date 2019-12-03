@@ -58,57 +58,53 @@ $(document).ready(function() {
       });
     }
   });
-  //enlaces activos
+  // Enlaces activos
   $("#menu a").on("click", function() {
     $("a.activo").removeClass("activo");
     $(this).addClass("activo");
-  });
-
-  $(window).on("load", function() {
-    $("#slider").nivoSlider();
   });
 
   $(function() {
     var menu = document.getElementById("menu");
     var headroom = new Headroom(menu);
     headroom.init();
-  
-  //Menu Responsive 
-  //Ancho de la página
+
+    //Menu Responsive
+    //Ancho de la página
     var ancho = $(window).width(),
-        enlaces = $('#enlaces'),
-        btnMenu = $('#btn-menu'),
-        icono = $('#btn-menu .icono')  
+      enlaces = $("#enlaces"),
+      btnMenu = $("#btn-menu"),
+      icono = $("#btn-menu .icono");
 
-        if(ancho < 768) {
-          enlaces.hide()
-          icono.addClass('fa-bars')
-        }
+    if (ancho < 768) {
+      enlaces.hide();
+      icono.addClass("fa-bars");
+    }
 
-        btnMenu.on('click', function(e) {
-          enlaces.slideToggle()
-          icono.toggleClass('fa-bars')
-          icono.toggleClass('fa-times')
-        })
-        
-        $(window).on('resize', function(){
-          if($(this).width() > 768) {
-            enlaces.show()
-            icono.addClass('fa-times')
-            icono.removeClass('fa-bars')
-          } else {
-            enlaces.hide()
-            icono.addClass('fa-bars')
-            icono.removeClass('fa-times')
-          }
-        })
+    btnMenu.on("click", function(e) {
+      enlaces.slideToggle();
+      icono.toggleClass("fa-bars");
+      icono.toggleClass("fa-times");
+    });
 
-
-       
+    $(window).on("resize", function() {
+      if ($(this).width() > 768) {
+        enlaces.show();
+        icono.addClass("fa-times");
+        icono.removeClass("fa-bars");
+      } else {
+        enlaces.hide();
+        icono.addClass("fa-bars");
+        icono.removeClass("fa-times");
+      }
+    });
   });
-
 });
 
+// Slider
+$(window).on("load", function() {
+  $("#slider").nivoSlider();
+});
 
 // Google Analytics
 window.dataLayer = window.dataLayer || [];
@@ -129,11 +125,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Imagenes Cargadas - Bug
-window.addEventListener("load", () => {
+/* window.addEventListener("load", () => {
   document
     .getElementById("contenedor-proyectos")
     .classList.add("proyectos-cargados");
-});
+}); */
 // Busco la ruta de la imagen y la descripción para el overlay
 const overlay = document.getElementById("overlay");
 document.querySelectorAll(".proyectos .thumb img").forEach(elemento => {
