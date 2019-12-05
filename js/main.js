@@ -15,9 +15,20 @@ $(document).ready(function() {
     );
   }
   // Scroll Elementos Menu
-  var sobreMi = $("#acerca-de").offset().top,
-    proyectos = $("#proyectos").offset().top,
-    contacto = $("#contacto").offset().top;
+  var bienvenido = $("#bienvenido").offset().top,
+      sobreMi = $("#acerca-de").offset().top,
+      proyectos = $("#proyectos").offset().top,
+      contacto = $("#contacto").offset().top
+
+    $("#btn-bienvenido").on("click", function(e) {
+      e.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: bienvenido
+        },
+        500
+      );
+    });
 
   $("#btn-sobre-mi").on("click", function(e) {
     e.preventDefault();
