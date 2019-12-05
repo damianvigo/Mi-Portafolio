@@ -176,7 +176,11 @@ header .contenedor-texto {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between; }
+      justify-content: space-between;
+      opacity: 0;
+      transition: 0.5s linear 1s; }
+      .main .proyectos .contenedor .contenedor-proyectos.proyectos-cargados {
+        opacity: 1; }
       .main .proyectos .contenedor .contenedor-proyectos .proyecto {
         width: 23%;
         margin-bottom: 50px; }

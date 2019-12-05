@@ -106,49 +106,52 @@ $(window).on("load", function() {
   $("#slider").nivoSlider();
 });
 
-// Google Analytics
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag("js", new Date());
+(function() {
+  // Google Analytics
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-gtag("config", "UA-145056950-1");
+  gtag("config", "UA-145056950-1");
 
-// Materialize
-document.addEventListener("DOMContentLoaded", () => {
-  const imgLightBox = document.querySelectorAll(".materialboxed");
-  M.Materialbox.init(imgLightBox, {
-    inDuration: 500,
-    outDuration: 500
+  // Materialize
+  document.addEventListener("DOMContentLoaded", () => {
+    const imgLightBox = document.querySelectorAll(".materialboxed");
+    M.Materialbox.init(imgLightBox, {
+      inDuration: 500,
+      outDuration: 500
+    });
   });
-});
 
-// Imagenes Cargadas - Bug
-/* window.addEventListener("load", () => {
+  // Imagenes Cargadas
+   window.addEventListener("load", () => {
+ const proyectos = document.getElementById("contenedor-proyectos")
+ proyectos.classList.add("proyectos-cargados");
+});
+  // Ruta de la imagen y descripción para el overlay
+  const overlay = document.getElementById("overlay");
+  document.querySelectorAll(".proyectos .thumb img").forEach(elemento => {
+    // Muestro el Overlay para cada imagen
+    elemento.addEventListener("click", () => {
+      const ruta = elemento.getAttribute("src");
+      const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+
+      overlay.classList.add("activo");
+      document.querySelector("#overlay img").src = ruta;
+      document.querySelector("#overlay .descripcion").innerHTML = descripcion;
+    });
+  });
+
+  // botón cerrar
   document
-    .getElementById("contenedor-proyectos")
-    .classList.add("proyectos-cargados");
-}); */
-// Busco la ruta de la imagen y la descripción para el overlay
-const overlay = document.getElementById("overlay");
-document.querySelectorAll(".proyectos .thumb img").forEach(elemento => {
-  // Muestro el Overlay para cada imagen
-  elemento.addEventListener("click", () => {
-    const ruta = elemento.getAttribute("src");
-    const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+    .querySelector("#btn-cerrar-lightbox")
+    .addEventListener("click", () => {
+      overlay.classList.remove("activo");
+    });
 
-    overlay.classList.add("activo");
-    document.querySelector("#overlay img").src = ruta;
-    document.querySelector("#overlay .descripcion").innerHTML = descripcion;
+  overlay.addEventListener("click", evento => {
+    evento.target.id === "overlay" ? overlay.classList.remove("activo") : "";
   });
-});
-
-// botón cerrar
-document.querySelector("#btn-cerrar-lightbox").addEventListener("click", () => {
-  overlay.classList.remove("activo");
-});
-
-overlay.addEventListener("click", evento => {
-  evento.target.id === "overlay" ? overlay.classList.remove("activo") : "";
-});
+})();
