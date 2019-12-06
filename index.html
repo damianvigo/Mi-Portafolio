@@ -317,10 +317,11 @@
           </div>
           <div class="contacto col-12 col-md-6 col-lg-6 order-1" id="contacto">
             <h3 class="titulo">Contacto</h3>
-            <form method="post" class="formulario" action="form.php">
-              <input type="text" placeholder="Tu nombre :)" name="nombre" required name="nombre">
-              <input type="email" placeholder="Mail" name="correo" required name="correo">
+            <form method="POST" class="formulario" id="formulario" action="form.php">
+              <input type="text" placeholder="Tu nombre :)" name="nombre">
+              <input type="email" placeholder="Mail" name="correo">
               <textarea name="mensaje" placeholder="¿En qué te puedo ayudar?"></textarea>
+              <ul class="error" id="error"></ul>
               <input class="boton" type="submit" value="Enviar">
             </form>
           </div>

@@ -286,6 +286,14 @@ header .contenedor-texto {
       background: #ff6337;
       color: #fff;
       box-shadow: 2px 5px 1px #ee4540; }
+  .main .certificado-contacto .contacto .formulario .error {
+    margin-top: 10px;
+    border-radius: 3px;
+    background: #cd1818;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 0.5em;
+    display: none; }
   .main .certificado-contacto .theme-mi-slider .nivoSlider {
     position: relative; }
     .main .certificado-contacto .theme-mi-slider .nivoSlider a {

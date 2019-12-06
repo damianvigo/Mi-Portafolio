@@ -16,19 +16,19 @@ $(document).ready(function() {
   }
   // Scroll Elementos Menu
   var bienvenido = $("#bienvenido").offset().top,
-      sobreMi = $("#acerca-de").offset().top,
-      proyectos = $("#proyectos").offset().top,
-      contacto = $("#contacto").offset().top
+    sobreMi = $("#acerca-de").offset().top,
+    proyectos = $("#proyectos").offset().top,
+    contacto = $("#contacto").offset().top;
 
-    $("#btn-bienvenido").on("click", function(e) {
-      e.preventDefault();
-      $("html, body").animate(
-        {
-          scrollTop: bienvenido
-        },
-        500
-      );
-    });
+  $("#btn-bienvenido").on("click", function(e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: bienvenido
+      },
+      500
+    );
+  });
 
   $("#btn-sobre-mi").on("click", function(e) {
     e.preventDefault();
@@ -137,10 +137,10 @@ $(window).on("load", function() {
   });
 
   // Imagenes Cargadas
-   window.addEventListener("load", () => {
- const proyectos = document.getElementById("contenedor-proyectos")
- proyectos.classList.add("proyectos-cargados");
-});
+  window.addEventListener("load", () => {
+    const proyectos = document.getElementById("contenedor-proyectos");
+    proyectos.classList.add("proyectos-cargados");
+  });
   // Ruta de la imagen y descripción para el overlay
   const overlay = document.getElementById("overlay");
   document.querySelectorAll(".proyectos .thumb img").forEach(elemento => {
@@ -165,4 +165,54 @@ $(window).on("load", function() {
   overlay.addEventListener("click", evento => {
     evento.target.id === "overlay" ? overlay.classList.remove("activo") : "";
   });
+
+  // Validacion formulario
+  var formulario = document.getElementById("formulario"),
+    nombre = formulario.nombre,
+    correo = formulario.correo,
+    mensaje = formulario.mensaje,
+    error = document.getElementById("error");
+
+  function validarNombre(e) {
+    if (nombre.value == "" || nombre.value == null) {
+      error.style.display = "block";
+      error.innerHTML += "<li>Por favor completa tu nombre</li>";
+
+      e.preventDefault();
+    } else {
+      error.style.display = "none";
+    }
+  }
+
+  function validarCorreo(e) {
+    if (correo.value == "" || correo.value == null) {
+      error.style.display = "block";
+      error.innerHTML += "<li>Por favor completa tu mail</li>";
+
+      e.preventDefault();
+    } else {
+      error.style.display = "none";
+    }
+  }
+
+  function validarMensaje() {
+    if (mensaje.value == "" || mensaje.value == null) {
+      error.style.display = "block";
+      error.innerHTML += "<li>Por favor dejame tu mensaje</li>";
+
+      e.preventDefault();
+    } else {
+      error.style.display = "none";
+    }
+  }
+
+  function validarFormulario(e) {
+    error.innerHTML = "";
+
+    validarNombre(e);
+    validarCorreo(e);
+    validarMensaje(e);
+  }
+
+  formulario.addEventListener("submit", validarFormulario);
 })();
