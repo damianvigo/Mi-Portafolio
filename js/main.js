@@ -215,4 +215,7 @@ $(window).on("load", function() {
   }
 
   formulario.addEventListener("submit", validarFormulario);
+
 })();
+
+
