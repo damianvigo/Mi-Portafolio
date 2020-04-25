@@ -55,7 +55,7 @@ body {
       display: flex; }
 
 header {
-  background: url("../img/fondo2.jpg") #000;
+  background: url("../images/img/fondo2.jpg") #000;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -304,7 +304,7 @@ header .contenedor-texto {
     text-indent: -9999px;
     left: 6px; }
   .main .certificado-contacto .theme-mi-slider .nivo-directionNav .nivo-nextNav {
-    background-image: url(../icon/right-arrow.svg);
+    background-image: url(../../icon/right-arrow.svg);
     background-size: cover;
     text-indent: -9999px;
     margin-left: 15px;
@@ -366,30 +366,31 @@ footer .redes-sociales {
   .materialbox-caption {
     width: 70%; }
 
-  .main .proyectos .contenedor .contenedor-proyectos {
+  .main .proyectos__contenedor-proyectos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .main .proyectos .contenedor .contenedor-proyectos .proyecto {
-      width: 100%; } }
+  .main .proyectos__proyecto {
+    width: 100%; } }
 @media screen and (max-width: 800px) {
   header .menu {
     text-align: center; } }
 @media screen and (max-width: 768px) {
-  .main .certificado-contacto .container .contacto form .boton {
-    margin: 1.5em; }
-
   footer .redes-sociales .items {
     width: 100%;
     margin: 0 auto; }
   footer .redes-sociales .creado-por {
-    margin: 10px;
+    margin-top: 50px;
     font-size: 1em; }
+
+  .main .certificado-contacto .theme-mi-slider {
+    width: 70%;
+    margin: 0 auto; }
 
   header .menu {
     padding: 10px; }
-    header .menu .enlaces {
+    header .menu__enlaces {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -397,11 +398,11 @@ footer .redes-sociales {
       font-size: 16px;
       position: relative;
       right: 40%; }
-      header .menu .enlaces a {
+      header .menu__enlaces__a {
         font-size: 16px;
         display: inline-block;
         width: 50%;
-        background: #000; }
+        background: #577399; }
     header .menu .menu-movil {
       display: flex;
       flex-direction: row;
@@ -416,20 +417,14 @@ footer .redes-sociales {
   .formulario {
     width: 85%; }
 
-  header .menu .enlaces a {
+  header .menu__enlaces__a {
     font-size: 14px;
     width: 70%; } }
 @media screen and (max-width: 560px) {
-  header .contenedor-texto .texto .nombre {
+  header .contenedor-texto__nombre {
     font-size: 35px; }
-  header .contenedor-texto .texto .profesion {
+  header .contenedor-texto__profesion {
     font-size: 18px; }
-
-  .main .certificado-contacto .container .contacto form .boton {
-    width: 40%;
-    padding: 0;
-    font-size: 0.7em;
-    display: inline-block; }
 
   body .overlay .descripcion {
     font-size: 1em; } }
