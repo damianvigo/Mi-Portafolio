@@ -15,6 +15,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145056950-1"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -29,33 +30,37 @@
       <div class="menu-movil">
         <a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars"></i></a>
       </div>
-      <div class="enlaces" id="enlaces">
-        <a href="" id="btn-bienvenido"><i class="fa fa-home"></i> Bienvenido</a>
-        <a href="" id="btn-sobre-mi"><i class="fa fa-id-card-o"></i> Sobre mi</a>
-        <a href="" id="btn-proyectos"><i class="fa fa-code"></i> Proyectos</a>
-        <a href="" id="btn-contacto"><i class="fa fa-comments-o"></i> Contacto</a>
+      <div class="menu__enlaces" id="enlaces">
+        <a href="" id="btn-bienvenido" class="menu__enlaces__a"><i class="fa fa-home menu__enlaces__i"></i>
+          Bienvenido</a>
+        <a href="" id="btn-sobre-mi" class="menu__enlaces__a"><i class="fa fa-id-card-o menu__enlaces__i"></i> Sobre
+          mi</a>
+        <a href="" id="btn-proyectos" class="menu__enlaces__a"><i class="fa fa-code menu__enlaces__i"></i> Proyectos</a>
+        <a href="" id="btn-contacto" class="menu__enlaces__a"><i class="fa fa-comments-o menu__enlaces__i"></i>
+          Contacto</a>
       </div>
     </nav>
 
     <div class="contenedor">
       <div class="contenedor-texto">
-        <div class="texto">
-          <h1 class="nombre">Damián Vigo</h1>
-          <h2 class="profesion">Desarrollador Web</h2>
+        <div class="contenedor-texto__texto">
+          <h1 class="contenedor-texto__nombre">Damián Vigo</h1>
+          <h2 class="contenedor-texto__profesion">Desarrollador Web</h2>
         </div>
       </div>
     </div>
   </header>
 
   <section class="main">
+
     <section class="acerca-de" id="acerca-de">
       <div class="contenedor">
-        <div class="foto">
-          <img src="img/yo500.jpg" width="150" alt="Foto retrato de Damián Vigo" />
+        <div class="acerca-de__foto">
+          <img class="acerca-de--img" src="img/yo500.jpg" width="150" alt="Foto retrato de Damián Vigo" />
         </div>
 
-        <div class="texto">
-          <h3 class="titulo">¿Quién soy?</h3>
+        <div class="acerca-de__texto">
+          <h3 class="acerca-de__titulo">¿Quién soy?</h3>
           <p> ¡Hola! 👋 Me llamo Damián Vigo y soy Desarrollador web de Buenos Aires Argentina. Actualmente me encuentro
             mejorando mis conocimientos en tecnologías frontend y aprendiendo algunas cosas sobre backend.
             Entuasiasta por la tecnología, el código, el deporte y el
@@ -67,145 +72,154 @@
 
     <section class="proyectos" id="proyectos">
       <div class="contenedor">
-        <h3 class="titulo">¿Qué proyectos hice?</h3>
-        <div class="contenedor-proyectos" id="contenedor-proyectos">
-          <div class="proyecto" data-descripcion="Sitio Web de Series. Hecho con HTML5 Y CSS3">
-            <div class="thumb">
-              <img src="img/1.jpg" title="Series"
+        <h3 class="proyectos__titulo">¿Qué proyectos hice?</h3>
+        <div class="proyectos__contenedor-proyectos" id="contenedor-proyectos">
+
+          <div class="proyectos__proyecto" data-descripcion="Sitio Web de Series. Hecho con HTML5 Y CSS3">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/1.jpg" title="Series"
                 alt="Web de series, hecha con lenguajes de programación como html y css" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Web</p>
-              <p class="categoria">HTML - CSS</p>
-              <a class="repo" href="https://github.com/damianvigo/Mis-Series"
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Web</p>
+              <p class="proyectos__categoria">HTML - CSS</p>
+              <a class="proyectos__repo" href="https://github.com/damianvigo/Mis-Series"
                 onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
             </div>
           </div>
 
-          <div class="proyecto" data-descripcion="Login. Hecho con HTML5 Y CSS3">
-            <div class="thumb">
-              <img src="img/2.jpg" title="Login"
+          <div class="proyectos__proyecto" data-descripcion="Login. Hecho con HTML5 Y CSS3">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/2.jpg" title="Login"
                 alt="Web de inicio de sesión, hecha con lenguajes de programación como html y css" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Login</p>
-              <p class="categoria">HTML - CSS</p>
-              <a class="repo" href="https://github.com/damianvigo"
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Login</p>
+              <p class="proyectos__categoria">HTML - CSS</p>
+              <a class="proyectos__repo" href="https://github.com/damianvigo"
                 onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
             </div>
           </div>
 
-          <div class="proyecto" data-descripcion="Login para dispositivos móviles. Hecho con HTML5 Y CSS3">
-            <div class="thumb">
-              <img src="img/3.jpg" title="Login"
+          <div class="proyectos__proyecto" data-descripcion="Login para dispositivos móviles. Hecho con HTML5 Y CSS3">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/3.jpg" title="Login"
                 alt="Web de inicio de sesión para dispositivos móviles, hecha con html y css" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Login - Responsive</p>
-              <p class="categoria">HTML - CSS</p>
-              <a class="repo" href="https://github.com/damianvigo"
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Login - Responsive</p>
+              <p class="proyectos__categoria">HTML - CSS</p>
+              <a class="proyectos__repo" href="https://github.com/damianvigo"
                 onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
             </div>
           </div>
 
-          <div class="proyecto"
+          <div class="proyectos__proyecto"
             data-descripcion="Juego donde el usuario debe memorizar la secuencia de colores. Hecho con HTML5, CSS3 y JavaScript.">
-            <div class="thumb">
-              <img src="img/4.jpg" title="Juego"
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/4.jpg" title="Juego"
                 alt="Juego 'Simón dice' donde el usuario debe adivinar la secuencia de colores. Hecho en html, css y Javascript " />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Juego</p>
-              <p class="categoria">HTML - CSS - JavaScript</p>
-              <a class="repo" href="https://github.com/damianvigo/Simon-dice"
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Juego</p>
+              <p class="proyectos__categoria">HTML - CSS - JavaScript</p>
+              <a class="proyectos__repo" href="https://github.com/damianvigo/Simon-dice"
                 onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
             </div>
           </div>
 
-          <div class="proyecto" data-descripcion="Marca ficticia de alimento para gatos. Hecho en Photoshop.">
-            <div class="thumb">
-              <img src="img/5.jpg" title="Gato siamés"
+          <div class="proyectos__proyecto"
+            data-descripcion="Marca ficticia de alimento para gatos. Hecho en Photoshop.">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/5.jpg" title="Gato siamés"
                 alt="Diseño de una marca ficticia de alimento para gatos, realizado en Photoshop" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Diseño de Marca</p>
-              <p class="categoria">Diseño</p>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Diseño de Marca</p>
+              <p class="proyectos__categoria">Diseño</p>
             </div>
           </div>
 
-          <div class="proyecto" data-descripcion="Imagen real de mi gato siamés para ser usada en síntesis gráfica.">
-            <div class="thumb">
-              <img src="img/6.jpg" title="Gato siamés"
+          <div class="proyectos__proyecto"
+            data-descripcion="Imagen real de mi gato siamés para ser usada en síntesis gráfica.">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/6.jpg" title="Gato siamés"
                 alt="Imagen real de un hermoso gato siamés mirando a la cámara" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Imagen Real</p>
-              <p class="categoria">Diseño</p>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Imagen Real</p>
+              <p class="proyectos__categoria">Diseño</p>
             </div>
           </div>
 
-          <div class="proyecto"
+          <div class="proyectos__proyecto"
             data-descripcion="Dibujo realizado en photoshop, utilizando las respectivas leyes de Gestalt.">
-            <div class="thumb">
-              <img src="img/7.jpg" title="Gato siamés"
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/7.jpg" title="Gato siamés"
                 alt="Boceto de un gato siamés dibujado en photoshop solo con lineas y planos" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Síntesis Gráfica</p>
-              <p class="categoria">Diseño</p>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Síntesis Gráfica</p>
+              <p class="proyectos__categoria">Diseño</p>
             </div>
           </div>
 
-          <div class="proyecto"
+          <div class="proyectos__proyecto"
             data-descripcion="Dibujo realizado en photoshop, utilizando las respectivas leyes de Gestalt.">
-            <div class="thumb">
-              <img src="img/8.jpg" title="Gato siamés"
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/8.jpg" title="Gato siamés"
                 alt="Boceto de un gato siamés dibujado en photoshop solo con planos blanco y negro" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Síntesis Gráfica</p>
-              <p class="categoria">Diseño</p>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Síntesis Gráfica</p>
+              <p class="proyectos__categoria">Diseño</p>
             </div>
           </div>
 
-          <div class="proyecto" data-descripcion="Diseño de una web en construcción, realizado en photoshop.">
-            <div class="thumb">
-              <img src="img/9.jpg" title="Web en construcción"
+          <div class="proyectos__proyecto"
+            data-descripcion="Diseño de una web en construcción, realizado en photoshop.">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/9.jpg" title="Web en construcción"
                 alt="Web con temática de música electrónica en construcción" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Diseño</p>
-              <p class="categoria">Diseño - Web</p>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Diseño</p>
+              <p class="proyectos__categoria">Diseño - Web</p>
             </div>
           </div>
 
-          <div class="proyecto" data-descripcion="Banner, realizado en photoshop.">
-            <div class="thumb">
-              <img src="img/10.jpg" title="Baileys" alt="Un banner del licor Baileys Irish Cream" />
+          <div class="proyectos__proyecto" data-descripcion="Banner, realizado en photoshop.">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/10.jpg" title="Baileys"
+                alt="Un banner del licor Baileys Irish Cream" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Diseño</p>
-              <p class="categoria">Diseño - Web</p>
-            </div>
-          </div>
-
-          <div class="proyecto" data-descripcion="Diseño de una web de un restaurante, realizado en photoshop.">
-            <div class="thumb">
-              <img src="img/12.jpg" title="Diseño" alt="Diseño de una Web de un restaurante de comida" />
-            </div>
-            <div class="descripcion">
-              <p class="nombre">Diseño</p>
-              <p class="categoria">Diseño - Web</p>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Diseño</p>
+              <p class="proyectos__categoria">Diseño - Web</p>
             </div>
           </div>
 
-          <div class="proyecto" data-descripcion="Diseño de una web en construcción, realizado en photoshop.">
-            <div class="thumb">
-              <img src="img/11.jpg" title="Web en construcción" alt="Web con temática deportiva en construcción" />
+          <div class="proyectos__proyecto"
+            data-descripcion="Diseño de una web de un restaurante, realizado en photoshop.">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/12.jpg" title="Diseño"
+                alt="Diseño de una Web de un restaurante de comida" />
             </div>
-            <div class="descripcion">
-              <p class="nombre">Diseño</p>
-              <p class="categoria">Diseño - Web</p>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Diseño</p>
+              <p class="proyectos__categoria">Diseño - Web</p>
+            </div>
+          </div>
+
+          <div class="proyectos__proyecto"
+            data-descripcion="Diseño de una web en construcción, realizado en photoshop.">
+            <div class="proyectos__thumb">
+              <img class="proyectos__img" src="img/11.jpg" title="Web en construcción"
+                alt="Web con temática deportiva en construcción" />
+            </div>
+            <div class="proyectos__descripcion">
+              <p class="proyectos__nombre">Diseño</p>
+              <p class="proyectos__categoria">Diseño - Web</p>
             </div>
           </div>
         </div>
@@ -301,7 +315,8 @@
                 <img src="img/diseñoProfesional.jpg"
                   alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Udemy" />
                 <img src="img/dv2.jpg" alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
-                <img src="img/frameworksJs.jpg" alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Udemy." />
+                <img src="img/frameworksJs.jpg"
+                  alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Udemy." />
                 <img src="img/dv3.jpg" alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
                 <img src="img/dv4.jpg" alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
                 <img src="img/dv5.jpg" alt="Diploma de Damián Vigo otorgado por la plataforma e-learning Platzi." />
@@ -333,7 +348,7 @@
 
   <section class="overlay" id="overlay">
     <div class="contenedor-img">
-      <button id="btn-cerrar-lightbox"><i class="fa fa-times"></i></button>
+      <button role="button" id="btn-cerrar-lightbox"><i class="fa fa-times"></i></button>
       <img src="" alt="">
     </div>
     <p class="descripcion"></p>
@@ -346,13 +361,12 @@
           class="github"><i class="fa fa-github"></i></a>
         <a href="https://www.facebook.com/ddamianvigo" onclick="window.open(this.href, '_blank'); return false;"
           class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="" class="gmail"><i
-            class="fa fa-envelope-o"></i></a>
+        <a href="" class="gmail"><i class="fa fa-envelope-o"></i></a>
         <a href="https://platzi.com/@Damian/" onclick="window.open(this.href, '_blank'); return false;" class="study"><i
             class="fa fa-graduation-cap"></i></a>
       </div>
       <div class="creado-por">
-        <p class="creado-por">Sitio diseñado por Dami&aacute;n Vigo. Todos los derechos reservados &copy; 2019</p>
+        <p class="creado-por">Sitio diseñado por Dami&aacute;n Vigo. &copy; 2020</p>
       </div>
     </section>
 

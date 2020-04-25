@@ -1,0 +1,52 @@
+.main
+  .proyectos
+    background: $color-variacion
+    padding: 60px 0
+    .contenedor
+      overflow: hidden
+    &__titulo
+      font-size: 34px
+      line-height: 34px
+      margin-bottom: 90px
+      font-weight: 300
+      text-align: center
+      color: $color-claro
+    &__contenedor-proyectos
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      opacity: 0
+      transition: 0.5s linear 1s
+      &.proyectos-cargados
+        opacity: 1
+    &__proyecto
+      width: 23%
+      margin-bottom: 50px
+    &__thumb
+      width: 100%
+      margin-bottom: 10px
+    &__img
+      width: 100%
+      vertical-align: top
+      border-radius: 3px
+      opacity: 0.7
+      cursor: pointer
+      &:hover
+        opacity: 1
+        -webkit-transition: all 0.3s ease
+        -o-transition: all 0.3s ease
+        transition: all 0.3s ease
+    &__descripcion
+      text-align: center
+    &__nombre
+      font-weight: 700
+      color: $color-claro
+      margin-bottom: 10px
+      font-size: 1em
+    &__categoria
+      font-size: 13px
+      color: $color-claro
+    &__repo
+      font-size: 20px
+      color: $color-claro

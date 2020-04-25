@@ -1,3 +1,18 @@
+$Fuente1: "Open Sans", sans-serif
+$Fuente2: 'Oswald', sans-serif
+$color-primario: #495867
+$color-claro: #f7f7ff
+$color-secundario: #bdd5ea
+$color-variacion: #577399
+
+@mixin descripcionDeImagenes
+  width: 40%
+  background: $color-primario
+  border-radius: 15px
+  font-size: 20px
+  color: $color-claro
+  line-height: 28px
+
 *
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
@@ -12,8 +27,8 @@
   overflow: hidden
 
 body
-  background: #fff
-  font-family: "Open Sans", sans-serif
+  background: $color-secundario
+  font-family: $Fuente1
   font-size: 16px
   .overlay
     position: fixed
@@ -29,15 +44,16 @@ body
     flex-direction: column
     z-index: 11
     .descripcion
-      color: #fff
-      margin: 1em
-      font-size: 1.2em
+      padding: 20px
+      margin: 20px
+      text-align: center
+      @include descripcionDeImagenes
     .contenedor-img
       position: relative
       #btn-cerrar-lightbox
         background: none
         font-size: 20px
-        color: #fff
+        color: $color-claro
         border: none
         cursor: pointer
         position: absolute
@@ -45,5 +61,5 @@ body
         top: -20px
       img
         max-width: 100%
-    &.activo
+    &.activo // lo muestro con js
       display: flex

@@ -1,0 +1,95 @@
+.main
+  .certificado-contacto
+    padding: 60px 0px
+    background: $color-variacion
+    font-size: 2em
+    line-height: 2em
+    margin-bottom: 40px
+    font-weight: 300
+    color: $color-claro
+    text-align: center
+    .titulo
+      text-align: center
+      font-size: 1.2em
+      font-weight: 300
+      margin-bottom: 2em
+    .contacto
+      .formulario
+        input[type="text"],
+        input[type="email"],
+        textarea
+          border-bottom: 2px solid $color-claro
+          padding: 15px 20px
+          font-size: 20px
+          margin-bottom: 25px
+          width: 100%
+          height: 100px
+          min-width: 100%
+          max-width: 100%
+          min-height: 100px
+          max-height: 300px
+          outline: none
+          &:focus
+            border: 2px solid $color-variacion
+        .boton
+          margin: auto
+          background: none
+          border: 1px solid  $color-claro
+          color: $color-claro
+          border-radius: 3px
+          padding: 15px 40px
+          cursor: pointer
+          font-size: 1em
+          &:hover
+            background: $color-primario
+            color: #fff
+            box-shadow: 2px 5px 1px $color-primario
+        .error 
+          margin-top: 10px
+          border-radius: 3px
+          background: #cd1818
+          color: #fff 
+          padding: 15px 10px 
+          font-size: .5em
+          display: none
+
+    .theme-mi-slider
+      .nivoSlider
+        position: relative
+        a
+          border: 0
+          display: block
+      .nivo-controlNav
+        display: flex
+        justify-content: center
+        .nivo-control
+          display: block
+          width: 18px
+          height: 18px
+          background: #545454
+          border-radius: 50%
+          margin: 5px
+          text-indent: -9999px
+          &.active
+            background: #64b2cd
+          &:hover
+            background: #1b1b1b
+      .nivo-directionNav
+        a
+          display: block
+          width: 35px
+          height: 35px
+        .nivo-prevNav
+          background-image: url(../icon/left-arrow.svg)
+          background-size: cover
+          text-indent: -9999px
+          left: 6px
+        .nivo-nextNav
+          background-image: url(../icon/right-arrow.svg)
+          background-size: cover
+          text-indent: -9999px
+          margin-left: 15px
+          right: 6px
+      .nivo-html-caption
+        position: absolute
+        top: 40%

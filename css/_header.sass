@@ -15,62 +15,61 @@ header
     transform: translateY(-100%)
   .menu
     position: fixed
-    background: rgba(0, 0, 0,.7)
+    background: $color-primario
     top: 0
     z-index: 10
     display: flex
     flex-direction: row
     justify-content: center   
     .activo
-      border-bottom: 2px solid #b7e778
+      border-bottom: 2px solid $color-claro
     .menu-movil
       .btn-menu
-        color: #fff
+        color: $color-claro
         text-decoration: none
         font-size: 2em
         display: none
-  .enlaces
-    display: inline-block
-    i
-      margin-right: 5px
-    a
-      padding: 15px
-      margin: 0 40px 0 0
-      color: #fff
+    &__enlaces
       display: inline-block
-      line-height: 1em
-      text-decoration: none
-      height: 50px
-      font-size: 1em
-      transition: 0.5s ease all
-      z-index: 99
-      &:hover
-        transform: translateY(5px)
-        background: #000
-        border-radius: 3px
+      &__i
+        margin-right: 5px
+      &__a
+        padding: 15px
+        margin: 0 40px 0 0
+        color: #fff
+        display: inline-block
+        line-height: 1em
+        text-decoration: none
+        height: 50px
+        font-size: 1em
+        transition: 0.5s ease all
+        z-index: 99
+        &:hover
+          transform: translateY(5px)
+          background: $color-variacion
+          border-radius: 3px
   .contenedor-texto
     display: flex
     justify-content: center
     align-content: center
     margin: 240px 0
-    .texto
-      border: 2px solid #a0c334
+    &__texto
+      border: 2px solid $color-secundario
       border-radius: 3px
       display: inline-block
       text-align: center
       padding: 20px 60px
       margin-top: -90px
       background: rgba(0, 0, 0, 0.9)
-      h1,
-      h2 
-        color: #fff
-        font-weight: 300
-        margin: 0
-      .nombre 
-        margin-bottom: 16px
-        font-size: 50px
-        line-height: 50px
-      .profesion
-        font-size: 25px
-        line-height: 25px
+    &__nombre 
+      margin-bottom: 16px
+      font-size: 50px
+      line-height: 50px
+      color: $color-claro
+      font-weight: 300
+    &__profesion
+      font-size: 25px
+      line-height: 25px
+      color: $color-claro
+      font-weight: 300
 
