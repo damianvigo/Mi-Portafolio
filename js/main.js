@@ -155,7 +155,7 @@ $(window).on('load', function () {
     });
   });
 
-  // botón cerrar
+  // Botón cerrar
   document.querySelector('#btn-cerrar-lightbox').addEventListener('click', () => {
     overlay.classList.remove('activo');
   });

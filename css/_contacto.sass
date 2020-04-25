@@ -1,58 +1,18 @@
 .main
+  .card-panel
+    padding: 40px
   .certificado-contacto
-    padding: 60px 0px
-    background: $color-variacion
-    font-size: 2em
-    line-height: 2em
-    margin-bottom: 40px
-    font-weight: 300
-    color: $color-claro
-    text-align: center
-    .titulo
+    &__contacto-titulo
       text-align: center
-      font-size: 1.2em
-      font-weight: 300
-      margin-bottom: 2em
-    .contacto
-      .formulario
-        input[type="text"],
-        input[type="email"],
-        textarea
-          border-bottom: 2px solid $color-claro
-          padding: 15px 20px
-          font-size: 20px
-          margin-bottom: 25px
-          width: 100%
-          height: 100px
-          min-width: 100%
-          max-width: 100%
-          min-height: 100px
-          max-height: 300px
-          outline: none
-          &:focus
-            border: 2px solid $color-variacion
-        .boton
-          margin: auto
-          background: none
-          border: 1px solid  $color-claro
-          color: $color-claro
-          border-radius: 3px
-          padding: 15px 40px
-          cursor: pointer
-          font-size: 1em
-          &:hover
-            background: $color-primario
-            color: #fff
-            box-shadow: 2px 5px 1px $color-primario
-        .error 
-          margin-top: 10px
-          border-radius: 3px
-          background: #cd1818
-          color: #fff 
-          padding: 15px 10px 
-          font-size: .5em
-          display: none
-
+      margin: 50px 0
+      font-size: 35px
+      color: $color-variacion
+    &__pregunta
+      font-size: 35px
+      height: 90px
+      color: $color-variacion
+      margin: 50px 0
+      text-align: center
     .theme-mi-slider
       .nivoSlider
         position: relative
