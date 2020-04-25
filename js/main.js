@@ -165,7 +165,7 @@ $(window).on('load', function () {
   });
 
   // Validacion formulario
-  var formulario = document.getElementById('formulario'),
+  /*   var formulario = document.getElementById('formulario'),
     nombre = formulario.nombre,
     correo = formulario.correo,
     mensaje = formulario.mensaje,
@@ -212,5 +212,5 @@ $(window).on('load', function () {
     validarMensaje(e);
   }
 
-  formulario.addEventListener('submit', validarFormulario);
+  formulario.addEventListener('submit', validarFormulario); */
 })();

@@ -257,56 +257,61 @@ header .contenedor-texto {
         color: #000; }
 
 .main .card-panel {
-  padding: 40px; }
-.main .certificado-contacto__contacto-titulo {
-  text-align: center;
-  margin: 50px 0;
-  font-size: 35px;
-  color: #577399; }
-.main .certificado-contacto__pregunta {
-  font-size: 35px;
-  height: 90px;
-  color: #577399;
-  margin: 50px 0;
-  text-align: center; }
-.main .certificado-contacto .theme-mi-slider .nivoSlider {
-  position: relative; }
-  .main .certificado-contacto .theme-mi-slider .nivoSlider a {
-    border: 0;
-    display: block; }
-.main .certificado-contacto .theme-mi-slider .nivo-controlNav {
-  display: flex;
-  justify-content: center; }
-  .main .certificado-contacto .theme-mi-slider .nivo-controlNav .nivo-control {
+  height: 1000px;
+  box-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.3); }
+.main .certificado-contacto {
+  background: #bdd5ea;
+  padding: 50px; }
+  .main .certificado-contacto__contacto-titulo {
+    text-align: center;
+    margin: 30px 0;
+    padding: 50px;
+    font-size: 35px;
+    color: #577399; }
+  .main .certificado-contacto__pregunta {
+    font-size: 35px;
+    padding: 50px;
+    color: #577399;
+    margin: 50px 0;
+    text-align: center; }
+  .main .certificado-contacto .theme-mi-slider .nivoSlider {
+    position: relative; }
+    .main .certificado-contacto .theme-mi-slider .nivoSlider a {
+      border: 0;
+      display: block; }
+  .main .certificado-contacto .theme-mi-slider .nivo-controlNav {
+    display: flex;
+    justify-content: center; }
+    .main .certificado-contacto .theme-mi-slider .nivo-controlNav .nivo-control {
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: #545454;
+      border-radius: 50%;
+      margin: 5px;
+      text-indent: -9999px; }
+      .main .certificado-contacto .theme-mi-slider .nivo-controlNav .nivo-control.active {
+        background: #64b2cd; }
+      .main .certificado-contacto .theme-mi-slider .nivo-controlNav .nivo-control:hover {
+        background: #1b1b1b; }
+  .main .certificado-contacto .theme-mi-slider .nivo-directionNav a {
     display: block;
-    width: 18px;
-    height: 18px;
-    background: #545454;
-    border-radius: 50%;
-    margin: 5px;
-    text-indent: -9999px; }
-    .main .certificado-contacto .theme-mi-slider .nivo-controlNav .nivo-control.active {
-      background: #64b2cd; }
-    .main .certificado-contacto .theme-mi-slider .nivo-controlNav .nivo-control:hover {
-      background: #1b1b1b; }
-.main .certificado-contacto .theme-mi-slider .nivo-directionNav a {
-  display: block;
-  width: 35px;
-  height: 35px; }
-.main .certificado-contacto .theme-mi-slider .nivo-directionNav .nivo-prevNav {
-  background-image: url(../icon/left-arrow.svg);
-  background-size: cover;
-  text-indent: -9999px;
-  left: 6px; }
-.main .certificado-contacto .theme-mi-slider .nivo-directionNav .nivo-nextNav {
-  background-image: url(../icon/right-arrow.svg);
-  background-size: cover;
-  text-indent: -9999px;
-  margin-left: 15px;
-  right: 6px; }
-.main .certificado-contacto .theme-mi-slider .nivo-html-caption {
-  position: absolute;
-  top: 40%; }
+    width: 35px;
+    height: 35px; }
+  .main .certificado-contacto .theme-mi-slider .nivo-directionNav .nivo-prevNav {
+    background-image: url(../icon/left-arrow.svg);
+    background-size: cover;
+    text-indent: -9999px;
+    left: 6px; }
+  .main .certificado-contacto .theme-mi-slider .nivo-directionNav .nivo-nextNav {
+    background-image: url(../icon/right-arrow.svg);
+    background-size: cover;
+    text-indent: -9999px;
+    margin-left: 15px;
+    right: 6px; }
+  .main .certificado-contacto .theme-mi-slider .nivo-html-caption {
+    position: absolute;
+    top: 40%; }
 
 footer .redes-sociales {
   background: #495867;
