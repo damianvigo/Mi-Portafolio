@@ -55,7 +55,7 @@ body {
       display: flex; }
 
 header {
-  background: url("../images/img/fondo2.jpg") #000;
+  background: url("../images/img/fondo2.jpg") #577399;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -186,10 +186,17 @@ header .contenedor-texto {
     margin-bottom: 10px; }
   .main .proyectos__img {
     width: 100%;
+    height: 200px;
+    object-fit: contain;
     vertical-align: top;
     border-radius: 3px;
     opacity: 0.7;
-    cursor: pointer; }
+    cursor: pointer;
+    animation: move;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
     .main .proyectos__img:hover {
       opacity: 1;
       -webkit-transition: all 0.3s ease;
@@ -208,7 +215,11 @@ header .contenedor-texto {
   .main .proyectos__repo {
     font-size: 20px;
     color: #f7f7ff; }
-
+@keyframes move {
+  0% {
+    transform: sclale(1); }
+  100% {
+    transform: scale(0.9); } }
 .materialbox-caption {
   bottom: 0px;
   right: 0;
@@ -299,12 +310,12 @@ header .contenedor-texto {
     width: 35px;
     height: 35px; }
   .main .certificado-contacto .theme-mi-slider .nivo-directionNav .nivo-prevNav {
-    background-image: url(../icon/left-arrow.svg);
+    background-image: url(../../public/icon/left-arrow.svg);
     background-size: cover;
     text-indent: -9999px;
     left: 6px; }
   .main .certificado-contacto .theme-mi-slider .nivo-directionNav .nivo-nextNav {
-    background-image: url(../../icon/right-arrow.svg);
+    background-image: url(../../public/icon/right-arrow.svg);
     background-size: cover;
     text-indent: -9999px;
     margin-left: 15px;
@@ -372,7 +383,9 @@ footer .redes-sociales {
     justify-content: center;
     align-items: center; }
   .main .proyectos__proyecto {
-    width: 100%; } }
+    width: 100%; }
+  .main .proyectos__img {
+    height: auto; } }
 @media screen and (max-width: 800px) {
   header .menu {
     text-align: center; } }
