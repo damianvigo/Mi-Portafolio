@@ -64,9 +64,7 @@ body {
     background: #343D5B;
     border-radius: 1000px;
     border: none;
-    outline: none;
-    left: 1220px;
-    top: 50px; }
+    outline: none; }
     body .switch::after {
       content: "";
       display: block;
@@ -458,6 +456,10 @@ footer .redes-sociales {
     color: #f7f7ff;
     font-size: 18px;
     order: 1; }
+
+body .switch {
+  left: 70%;
+  top: 50px; }
 
 footer .redes-sociales {
   display: block; }
