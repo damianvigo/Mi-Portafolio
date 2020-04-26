@@ -164,6 +164,14 @@ $(window).on('load', function () {
     evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
   });
 
+  // Modo nocturno
+  const btnSwitch = document.querySelector('#switch');
+
+  btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+  });
+
   // Validacion formulario
   /*   var formulario = document.getElementById('formulario'),
     nombre = formulario.nombre,
