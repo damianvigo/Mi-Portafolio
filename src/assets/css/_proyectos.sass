@@ -4,11 +4,17 @@
     padding: 60px 0
     .contenedor
       overflow: hidden
+      background: rgba(0, 0, 0, .4)
+      padding: 90px
+      
+      box-shadow: 0px 0px 4px $color-claro
+      border-radius: 40px
     &__titulo
       font-size: 34px
       line-height: 34px
       margin-bottom: 90px
-      font-weight: 300
+      font-family: $Fuente2
+      font-weight: 400
       text-align: center
       color: $color-claro
     &__contenedor-proyectos
@@ -34,7 +40,7 @@
       border-radius: 3px
       opacity: 0.7
       cursor: pointer
-      animation: move
+      animation: scale-img
       animation-timing-function: ease
       animation-direction: alternate
       animation-duration: 3s
@@ -57,8 +63,19 @@
     &__repo
       font-size: 20px
       color: $color-claro
-    @keyframes move
+    .fa-github
+      animation: scale-git
+      animation-timing-function: ease-in-out
+      animation-direction: alternate
+      animation-duration: 3s
+      animation-iteration-count: infinite
+    @keyframes scale-img
       0%
         transform: sclale(1)
       100%
         transform: scale(.9)
+    @keyframes scale-git
+      0%
+        transform: sclale(1)
+      100%
+        transform: scale(1.5)

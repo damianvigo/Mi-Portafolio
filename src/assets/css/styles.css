@@ -114,17 +114,19 @@ header .contenedor-texto {
     text-align: center;
     padding: 20px 60px;
     margin-top: -90px;
-    background: rgba(0, 0, 0, 0.9); }
+    background: #495867; }
   header .contenedor-texto__nombre {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-size: 50px;
     line-height: 50px;
     color: #f7f7ff;
-    font-weight: 300; }
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif; }
   header .contenedor-texto__profesion {
     font-size: 25px;
     line-height: 25px;
     color: #f7f7ff;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300; }
 
 .main .contenedor {
@@ -150,23 +152,29 @@ header .contenedor-texto {
     box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.6);
     border-radius: 15px; }
   .main .acerca-de__titulo {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #495867;
     font-size: 2.3em;
     line-height: 2.3em;
     margin-bottom: 40px;
-    font-weight: 300;
-    text-align: center;
-    color: #495867; }
+    text-align: center; }
 
 .main .proyectos {
   background: #577399;
   padding: 60px 0; }
   .main .proyectos .contenedor {
-    overflow: hidden; }
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 90px;
+    box-shadow: 0px 0px 4px #f7f7ff;
+    border-radius: 40px; }
   .main .proyectos__titulo {
     font-size: 34px;
     line-height: 34px;
     margin-bottom: 90px;
-    font-weight: 300;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     text-align: center;
     color: #f7f7ff; }
   .main .proyectos__contenedor-proyectos {
@@ -192,7 +200,7 @@ header .contenedor-texto {
     border-radius: 3px;
     opacity: 0.7;
     cursor: pointer;
-    animation: move;
+    animation: scale-img;
     animation-timing-function: ease;
     animation-direction: alternate;
     animation-duration: 3s;
@@ -215,11 +223,22 @@ header .contenedor-texto {
   .main .proyectos__repo {
     font-size: 20px;
     color: #f7f7ff; }
-@keyframes move {
+  .main .proyectos .fa-github {
+    animation: scale-git;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
+@keyframes scale-img {
   0% {
     transform: sclale(1); }
   100% {
     transform: scale(0.9); } }
+@keyframes scale-git {
+  0% {
+    transform: sclale(1); }
+  100% {
+    transform: scale(1.5); } }
 .materialbox-caption {
   bottom: 0px;
   right: 0;
@@ -241,6 +260,8 @@ header .contenedor-texto {
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 7px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     margin: 60px auto; }
   .main .full-website .galeria img {
     box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.6);
@@ -277,14 +298,18 @@ header .contenedor-texto {
     text-align: center;
     margin: 30px 0;
     padding: 50px;
-    font-size: 35px;
-    color: #577399; }
+    font-size: 34px;
+    color: #577399;
+    font-family: "Lato", sans-serif;
+    font-weight: 400; }
   .main .certificado-contacto__pregunta {
-    font-size: 35px;
+    font-size: 34px;
     padding: 50px;
     color: #577399;
     margin: 50px 0;
-    text-align: center; }
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400; }
   .main .certificado-contacto .theme-mi-slider .nivoSlider {
     position: relative; }
     .main .certificado-contacto .theme-mi-slider .nivoSlider a {
