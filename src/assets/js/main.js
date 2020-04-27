@@ -179,7 +179,7 @@ $(window).on('load', function () {
     }
   });
 
-    // El modo actual
+  // El modo actual
   if (localStorage.getItem('dark-mode') === 'true') {
     document.body.classList.add('dark');
     btnSwitch.classList.add('active');
@@ -187,6 +187,15 @@ $(window).on('load', function () {
     document.body.classList.remove('dark');
     btnSwitch.classList.remove('active');
   }
+
+  // Barra de color
+  /*   let progress = document.getElementById('progressbar');
+
+  let totalHeight = document.body.scrollHeight - window.innerHeight;
+  window.onscroll = function () {
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + '%';
+  }; */
 
   // Validacion formulario
   /*   var formulario = document.getElementById('formulario'),
