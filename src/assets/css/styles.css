@@ -219,7 +219,8 @@ header .contenedor-texto {
     background: rgba(0, 0, 0, 0.4);
     padding: 90px;
     box-shadow: 0px 0px 4px #f7f7ff;
-    border-radius: 40px; }
+    border-radius: 40px;
+    margin-top: 70px; }
   .main .proyectos__titulo {
     font-size: 34px;
     line-height: 34px;
@@ -307,12 +308,19 @@ header .contenedor-texto {
 .main .full-website {
   background: #bdd5ea;
   transition: 3s ease all; }
+  .main .full-website__full-back {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 90px;
+    box-shadow: 0px 0px 4px #f7f7ff;
+    border-radius: 40px;
+    margin-top: 70px;
+    margin-bottom: 50px; }
   body.dark .main .full-website {
     background: #111; }
     body.dark .main .full-website h2 {
       color: #fff; }
   .main .full-website__titulo {
-    color: #577399;
+    color: #fff;
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 7px;
@@ -346,7 +354,8 @@ header .contenedor-texto {
 
 .main .card-panel {
   height: 1000px;
-  box-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 80px; }
   body.dark .main .card-panel {
     background: #636e72;
     border: 1px solid #f7f7ff;
@@ -458,7 +467,7 @@ footer .redes-sociales {
     order: 1; }
 
 body .switch {
-  left: 70%;
+  left: 65%;
   top: 50px; }
 
 footer .redes-sociales {
@@ -483,7 +492,12 @@ footer .redes-sociales {
   .main .proyectos__proyecto {
     width: 100%; }
   .main .proyectos__img {
-    height: auto; } }
+    height: auto; }
+
+  .full-website .galeria {
+    text-align: center; }
+    .full-website .galeria .full-web {
+      width: 100%; } }
 @media screen and (max-width: 800px) {
   header .menu {
     text-align: center; } }
@@ -498,6 +512,8 @@ footer .redes-sociales {
   .main .certificado-contacto .theme-mi-slider {
     width: 70%;
     margin: 0 auto; }
+  .main .acerca-de__texto {
+    width: 100%; }
 
   header .menu {
     padding: 10px; }
@@ -528,6 +544,9 @@ footer .redes-sociales {
   .formulario {
     width: 85%; }
 
+  .main .full-website .full-website__titulo {
+    font-size: 20px; }
+
   header .menu__enlaces__a {
     font-size: 14px;
     width: 70%; } }
@@ -537,14 +556,30 @@ footer .redes-sociales {
   header .contenedor-texto__profesion {
     font-size: 18px; }
 
+  .main .proyectos__titulo {
+    font-size: 20px; }
+  .main .certificado-contacto h3 {
+    font-size: 20px; }
+  .main .certificado-contacto span {
+    font-size: 10px; }
+
   body .overlay .descripcion {
-    font-size: 1em; } }
+    font-size: 1em; }
+  body .main .acerca-de__texto {
+    width: 100%; }
+  body .main .acerca-de__titulo {
+    font-size: 20px; }
+  body .main p {
+    font-size: 14px; } }
 @media screen and (max-width: 413px) {
   footer .redes-sociales .items {
     width: 75%;
     margin-bottom: 2em; }
 
   body .overlay .descripcion {
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+  body .switch {
+    left: 75%;
+    width: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

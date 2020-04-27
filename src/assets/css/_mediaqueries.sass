@@ -2,7 +2,7 @@
 
 body
   .switch
-    left: 70%
+    left: 65%
     top: 50px
 footer
   .redes-sociales
@@ -31,6 +31,11 @@ footer
         width: 100%
       &__img
         height: auto
+  .full-website
+    .galeria
+      text-align: center
+      .full-web
+        width: 100%
 
 @media screen and (max-width: 800px)
   header
@@ -52,6 +57,8 @@ footer
       .theme-mi-slider
         width: 70%
         margin: 0 auto
+    .acerca-de__texto
+      width: 100%
   
   header
     .menu
@@ -84,6 +91,11 @@ footer
   .formulario
     width: 85%
 
+  .main
+    .full-website
+      .full-website__titulo
+        font-size: 20px
+
   header
     .menu
       &__enlaces
@@ -99,12 +111,25 @@ footer
         font-size: 35px
       &__profesion
         font-size: 18px
-
+  .main
+    .proyectos__titulo
+      font-size: 20px
+    .certificado-contacto
+      h3
+        font-size: 20px
+      span 
+        font-size: 10px
   body
     .overlay
       .descripcion
         font-size: 1em
-
+    .main
+      .acerca-de__texto
+        width: 100%
+      .acerca-de__titulo
+        font-size: 20px
+      p
+        font-size: 14px
 
 @media screen and (max-width: 413px)
   footer
@@ -118,3 +143,6 @@ footer
     .overlay
       .descripcion
         font-size: .7em
+    .switch
+      left: 75%
+      width: 50px

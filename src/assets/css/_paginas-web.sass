@@ -11,12 +11,19 @@
   .full-website
     background: $color-secundario
     transition: 3s ease all
+    &__full-back
+      background: rgba(0, 0, 0, .4)
+      padding: 90px
+      box-shadow: 0px 0px 4px $color-claro
+      border-radius: 40px
+      margin-top: 70px
+      margin-bottom: 50px
     body.dark &
       background: $color-noche
       h2
         color: $color-noche-claro-tipo
     &__titulo
-      color: $color-variacion
+      color: $color-noche-claro-tipo
       font-size: 3em
       text-transform: uppercase
       letter-spacing: 7px
