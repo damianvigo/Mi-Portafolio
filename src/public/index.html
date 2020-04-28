@@ -17,7 +17,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145056950-1"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="../assets/css/normalize.css" />
@@ -84,14 +84,14 @@
         <h3 class="proyectos__titulo">¿Qué proyectos hice?</h3>
         <div class="proyectos__contenedor-proyectos" id="contenedor-proyectos">
 
-          <div class="proyectos__proyecto" data-descripcion="Blog - HTML5 - CSS3">
+          <div class="proyectos__proyecto" data-descripcion="Blog - HTML5 - CSS3(Materialize)">
             <div class="proyectos__thumb">
               <img class="proyectos__img" loading="lazy" src="../assets/images/img/materialize.jpg" title="Blog"
                 alt="Maquetado web de un blog con el framework Materialize" />
             </div>
             <div class="proyectos__descripcion">
               <p class="proyectos__nombre">Maquetación</p>
-              <p class="proyectos__categoria">Materialize - Framework de CSS</p>
+              <p class="proyectos__categoria">HTML - CSS</p>
               <a class="proyectos__repo" href="https://github.com/damianvigo/Blog-materialize"
                 onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
             </div>
@@ -104,7 +104,7 @@
             </div>
             <div class="proyectos__descripcion">
               <p class="proyectos__nombre">Maquetación</p>
-              <p class="proyectos__categoria">HTML - CSS - BEM</p>
+              <p class="proyectos__categoria">HTML - CSS</p>
               <a class="proyectos__repo" href="https://github.com/damianvigo/web-noticias"
                 onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
             </div>
@@ -123,7 +123,7 @@
             </div>
           </div>
 
-          <div class="proyectos__proyecto" data-descripcion="Página de inicio HTML5 - CSS3 - JavaScript Vanilla">
+          <div class="proyectos__proyecto" data-descripcion="Página de inicio HTML5 - CSS3 - Vanilla JS">
             <div class="proyectos__thumb">
               <img class="proyectos__img" loading="lazy" src="../assets/images/img/netflix.png" title="Netflix"
                 alt="Maquetación web de la plataforma Netflix" />
@@ -221,15 +221,15 @@
             </div>
           </div>
 
-          <div class="proyectos__proyecto" data-descripcion="modificar">
+          <div class="proyectos__proyecto" data-descripcion="Portal de noticias HTML5 - CSS3(Sass) | Vanilla JS">
             <div class="proyectos__thumb">
-              <img class="proyectos__img" loading="lazy" src="../assets/images/img/" title="" alt="modificar" />
+              <img class="proyectos__img" loading="lazy" src="../assets/images/img/tech.jpg" title="" alt="modificar" />
             </div>
             <div class="proyectos__descripcion">
-              <p class="proyectos__nombre">modificar</p>
-              <p class="proyectos__categoria">modificar</p>
-              <a class="proyectos__repo" href="" onclick="window.open(this.href, '_blank'); return false;"><i
-                  class="fa fa-github"></i></a>
+              <p class="proyectos__nombre">Maquetación</p>
+              <p class="proyectos__categoria">HTML - CSS - JavaScript</p>
+              <a class="proyectos__repo" href="https://github.com/damianvigo/tech-news"
+                onclick="window.open(this.href, '_blank'); return false;"><i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -387,7 +387,7 @@
         </div>
         <!-- Slider -->
         <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4  mr-5">
             <div class="slider-wrapper theme-mi-slider">
               <div id="slider" class="nivoSlider">
                 <img src="../assets/images/img/dv1.jpg"
@@ -437,20 +437,22 @@
   </aside>
 
   <footer>
-    <section class="redes-sociales">
-      <div class="items">
-        <a href="https://github.com/damianvigo/" onclick="window.open(this.href, '_blank'); return false;"
-          class="github"><i class="fa fa-github"></i></a>
-        <a href="https://www.facebook.com/ddamianvigo" onclick="window.open(this.href, '_blank'); return false;"
-          class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="" class="gmail"><i class="fa fa-envelope-o"></i></a>
-        <a href="https://platzi.com/@Damian/" onclick="window.open(this.href, '_blank'); return false;" class="study"><i
-            class="fa fa-graduation-cap"></i></a>
-      </div>
-      <div class="creado-por">
-        <p class="creado-por">2020 © Damián Vigo</p>
-      </div>
-    </section>
+    <div class="contenedor">
+      <section class="redes-sociales">
+        <div class="items">
+          <a href="https://github.com/damianvigo/" onclick="window.open(this.href, '_blank'); return false;"
+            class="github"><i class="fa fa-github"></i></a>
+          <a href="https://www.facebook.com/ddamianvigo" onclick="window.open(this.href, '_blank'); return false;"
+            class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="" class="gmail"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://platzi.com/@Damian/" onclick="window.open(this.href, '_blank'); return false;"
+            class="study"><i class="fa fa-graduation-cap"></i></a>
+        </div>
+        <div class="creado-por">
+          <p class="creado-por">2020 © Damián Vigo</p>
+        </div>
+      </section>
+    </div>
   </footer>
 
   <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
