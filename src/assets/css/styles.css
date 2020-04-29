@@ -576,14 +576,23 @@ footer .redes-sociales {
       font-size: 20px; }
   body .redes-sociales .creado-por {
     margin-top: 50px;
-    font-size: 1em; } }
+    font-size: 1em; }
+  body header .menu__enlaces__a {
+    font-size: 9px;
+    width: 100%; }
+  body header .menu__enlaces__i {
+    font-size: 13px; } }
 @media screen and (max-width: 413px) {
+  .main .proyectos__titulo {
+    font-size: 15px; }
+
   footer .redes-sociales .items {
     width: 75%;
     margin-bottom: 2em; }
 
   body .overlay .descripcion {
-    font-size: 0.7em; }
+    font-size: 0.7em;
+    width: 100%; }
   body .switch {
     left: 75%;
     width: 50px; } }
